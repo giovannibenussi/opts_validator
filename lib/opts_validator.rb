@@ -16,7 +16,7 @@ class OptsValidator
             unless @logger.nil?
                 @logger.error(message)
             else
-                puts message.red
+                puts "Error: #{message}".red
             end
             exit
         end
